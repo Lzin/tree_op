@@ -1,5 +1,4 @@
 package tree_op;
-
 //树的遍历
 public class BinaryTreeDemo {
     public static void main(String[] args) {
@@ -63,7 +62,11 @@ public class BinaryTreeDemo {
         } else {
             System.out.println("未找到该结点");
         }
-
+        //开始测试删除方法
+        System.out.println("=========================");
+        System.out.println("删除节点");
+        myTree.delNode(5);
+        //前序遍历证明删除结果
+        myTree.preOrder();
     }
-
 }

@@ -66,4 +66,18 @@ public class BinaryTree {
         }
     }
 
+    //删除节点
+    public void delNode(int no){
+        if(root!=null){
+            //如果根节点匹配，删除根节点
+            if(root.getNo()==no){
+                root=null;
+            }else{
+                root.delNode(no);
+            }
+        }else {
+            System.out.println("空树不能删除~~");
+        }
+    }
+
 }
